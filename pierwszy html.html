@@ -1,0 +1,69 @@
+<html>
+ <head>
+ <title> 1 </title>
+
+ <script language="JavaScript">
+ function WinOpen()
+ {
+    window.open("obraz 1.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+ }
+ function WinOpen1()
+ {
+    window.open("obraz 2.html","okienko1","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=500");
+ }
+ function WinOpen2()
+ {
+    window.open("obraz 3.html","okienko2","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=800");
+ }
+ function WinOpen3()
+ {
+    window.open("obraz 4.html","okienko3","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=1100");
+ }
+ function rodzajeOkienek()
+ {
+    window.open("okienka.html","rodzaje okienek","toolbar=no,directories=no,menubar=no,height=300,width=500,top=200,left=1100");
+ }
+ function konwersja()
+ {
+    window.open("konwersja.html","rodzaje okienek","toolbar=no,directories=no,menubar=no,height=250,width=500,top=200,left=1100");
+ }
+ </script>
+
+ <script type="text/javascript"> function show_alert() { alert("Uwaga!"); } </script> 
+
+ <script type="text/javascript"> 
+    function show_confirm() 
+    { 
+    var r=confirm("Naciśnij klawisz"); 
+    if (r==true) 
+    { document.write("Nacisnąłeś OK!"); } 
+    else 
+    { document.write("Nacisnąłeś Cancel!"); } 
+    } 
+   </script> 
+
+<script type="text/javascript"> 
+    function show_prompt() 
+    { 
+    var name=prompt("Napisz imię","Imię Nazwisko"); 
+    if (name!=null && name!="") 
+    { 
+    document.write("Witaj " + name + "! jak się masz?"); 
+    } 
+    } 
+    </script> 
+ </head>
+<body>
+ <form>
+ <input type="button" name="przycisk" value="Ronaldo" onclick="WinOpen(' ')">
+ <input type="button" name="przycisk" value="Neymar" onclick="WinOpen1(' ')">
+ <input type="button" name="przycisk" value="Hazard" onclick="WinOpen2(' ')">
+ <input type="button" name="przycisk" value="Haland" onclick="WinOpen3(' ')">
+ <input type="button" name="przycisk" value="Rodzaje Okienek" onclick="rodzajeOkienek(' ')">
+ <input type="button" name="przycisk" value="Konwersja Liczb" onclick="konwersja(' ')">
+ <input type="button" onclick="show_alert()" value="Pokaż Alert Box" /> 
+ <input type="button" onclick="show_confirm()" value="Pokaż confirm box" /> 
+ <input type="button" onclick="show_prompt()" value="Pokaż prompt box" />
+ </form>
+</body>
+</html>
